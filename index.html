@@ -3,136 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Nara Logistics cc | Clearing & Forwarding in Walvis Bay, Namibia</title>
-  <meta name="description" content="Nara Logistics cc – trusted clearing and forwarding, cross-border transport, air freight, and bond facilities in Walvis Bay, Namibia. Get your free quote today.">
+  <title>Nara Logistics cc | Clearing & Freight Forwarding Walvis Bay</title>
+  <meta name="description" content="Nara Logistics cc – expert clearing & forwarding, cross-border transport, air freight, and bond facilities in Walvis Bay, Namibia. Globally connected, locally invested. Get a free quote.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://nara-logistics.com.na">
-  <!-- Google Fonts + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://nara-logistics.com.na/">
+  <!-- Google Fonts + Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
-    /* ----- DESIGN TOKENS (Blueprint hex overrides) ----- */
+    /* ---------- DESIGN TOKENS (Blueprint Overrides) ---------- */
     :root {
-      --bg-white: #FFFFFF;
-      --text-dark: #0B1A2B;
-      --accent-blue: #005BBB;
-      --accent-blue-hover: #004A99;
-      --accent-gold: #FFB020;
-      --border-light: #E6EEF8;
-      --gray-muted: #4B5563;
+      --primary: #2B8AC9;         /* primary blue */
+      --primary-dark: #1F6A9C;
+      --primary-light: #5DA8D9;
+      --accent: #F39C12;          /* orange accent */
+      --accent-hover: #E67E22;
+      --accent-red: #E74C3C;
+      --text-main: #1A2C3E;
+      --text-muted: #4B5563;
+      --text-light: #6B7280;
+      --white: #FFFFFF;
+      --white-muted: #E2E8F0;
+      --bg-light: #F9FAFB;
+      --bg-dark: #2C3E50;
+      --footer-dark: #1A252F;
+      --border: #E5E7EB;
       
-      --font-heading: 'Inter', system-ui, sans-serif;
+      --font-heading: 'Montserrat', system-ui, sans-serif;
       --font-body: 'Inter', system-ui, sans-serif;
       
-      --container-max: 1200px;
+      --space-xs: 8px;
+      --space-sm: 16px;
+      --space-md: 24px;
+      --space-lg: 32px;
+      --space-xl: 48px;
+      --space-2xl: 64px;
+      --space-section: 100px;
+      --space-section-mob: 56px;
+      --container: 1200px;
+      
       --radius-md: 8px;
       --radius-lg: 12px;
-      --shadow-sm: 0 6px 18px rgba(11,26,43,0.06);
-      --shadow-md: 0 10px 20px rgba(11,26,43,0.08);
-      --transition: all 0.2s ease;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 24px rgba(0,0,0,0.12);
     }
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+    
     body {
       font-family: var(--font-body);
-      color: var(--text-dark);
-      background: var(--bg-white);
-      line-height: 1.5;
+      color: var(--text-muted);
+      background: var(--white);
+      line-height: 1.6;
+      font-size: 16px;
       scroll-behavior: smooth;
     }
+    
+    h1, h2, h3, .h1, .h2 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.2;
+    }
+    
     .container {
-      max-width: var(--container-max);
+      max-width: var(--container);
       margin: 0 auto;
       padding: 0 24px;
     }
-    /* Section spacing */
+    
     .section {
-      padding: 100px 0;
+      padding: var(--space-section) 0;
     }
-    @media (max-width: 1024px) {
-      .section { padding: 72px 0; }
-    }
+    
     @media (max-width: 768px) {
-      .section { padding: 56px 0; }
+      .section {
+        padding: var(--space-section-mob) 0;
+      }
+      .container {
+        padding: 0 20px;
+      }
     }
-    .bg-light {
-      background-color: #F8FAFE;
-    }
-    /* Typography */
-    h1, h2, h3 {
-      font-family: var(--font-heading);
-      font-weight: 800;
-      color: var(--text-dark);
-      letter-spacing: -0.02em;
-    }
-    h1 {
-      font-size: 56px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
-    h2 {
-      font-size: 36px;
-      font-weight: 700;
-      margin-bottom: 24px;
-    }
-    h3 {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 12px;
-    }
-    .lead {
-      font-size: 18px;
-      color: var(--gray-muted);
-      margin-bottom: 28px;
-      line-height: 1.5;
-    }
-    .pre-headline {
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent-blue);
-      display: inline-block;
-      margin-bottom: 16px;
-    }
-    /* Buttons */
-    .btn-primary, .btn-secondary {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 14px 32px;
-      font-weight: 700;
-      border-radius: var(--radius-md);
-      transition: var(--transition);
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 16px;
-      border: none;
-      background: none;
-    }
-    .btn-primary {
-      background: var(--accent-blue);
-      color: white;
-      box-shadow: var(--shadow-sm);
-    }
-    .btn-primary:hover {
-      background: var(--accent-blue-hover);
-      transform: translateY(-2px);
-    }
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid var(--accent-blue);
-      color: var(--accent-blue);
-    }
-    .btn-secondary:hover {
-      background: var(--accent-blue);
-      color: white;
-      transform: translateY(-2px);
-    }
-    /* Grid */
+    
+    /* Grids */
     .grid-2, .grid-3, .grid-4 {
       display: grid;
       gap: 32px;
@@ -140,42 +98,68 @@
     .grid-2 { grid-template-columns: repeat(2, 1fr); }
     .grid-3 { grid-template-columns: repeat(3, 1fr); }
     .grid-4 { grid-template-columns: repeat(4, 1fr); }
-    @media (max-width: 1024px) {
-      .grid-4 { grid-template-columns: repeat(2, 1fr); }
-    }
     @media (max-width: 768px) {
-      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+      .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; gap: 24px; }
     }
-    /* Cards */
-    .card, .service-card, .step-card {
-      background: var(--bg-white);
-      border-radius: var(--radius-lg);
-      padding: 28px;
+    
+    /* Buttons */
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
       box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-      border: 1px solid var(--border-light);
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      padding: 12px 28px;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover {
+      background: var(--accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    /* Cards & trust */
+    .card, .service-card, .step-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      border: 1px solid var(--border);
     }
     .card:hover, .service-card:hover {
       transform: translateY(-6px);
-      box-shadow: var(--shadow-md);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
     }
-    .service-card i, .feature-icon {
-      font-size: 38px;
-      color: var(--accent-blue);
-      margin-bottom: 20px;
-    }
-    .trust-strip {
-      display: flex;
-      gap: 24px;
-      margin-top: 32px;
-      flex-wrap: wrap;
-    }
-    /* Header & top bar */
+    
+    /* ===== HEADER & NAV ===== */
     .top-bar {
-      background: var(--text-dark);
-      color: #DDD;
-      font-size: 13px;
+      background: var(--primary-dark);
+      color: var(--white-muted);
       padding: 8px 0;
+      font-size: 0.85rem;
     }
     .top-bar .container {
       display: flex;
@@ -183,481 +167,612 @@
       flex-wrap: wrap;
       gap: 12px;
     }
-    .top-bar a {
-      color: white;
-      text-decoration: none;
+    .top-bar i {
+      margin-right: 6px;
+      color: var(--accent);
     }
-    .site-header {
+    .main-header {
       position: sticky;
       top: 0;
-      background: var(--bg-white);
       z-index: 1000;
-      box-shadow: var(--shadow-sm);
+      background: var(--primary);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
     }
-    .header-content {
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 24px;
+      max-width: var(--container);
+      margin: 0 auto;
+    }
+    .logo-area {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
-      height: 72px;
-      transition: height 0.2s;
+      gap: 12px;
     }
-    .logo img {
+    .logo-img {
       height: 48px;
       width: auto;
-      max-width: 200px;
-      display: block;
     }
-    .nav {
+    .logo-text {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+    }
+    .nav-links {
       display: flex;
-      gap: 32px;
+      gap: 28px;
       align-items: center;
     }
-    .nav a {
+    .nav-links a {
+      color: var(--white);
       text-decoration: none;
-      font-weight: 600;
-      color: var(--text-dark);
+      font-weight: 500;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    #nav-cta {
+      background: var(--accent);
+      padding: 10px 24px;
+      border-radius: var(--radius-md);
+      color: var(--white);
+      font-weight: 700;
+    }
+    #nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
     }
     .mobile-toggle {
       display: none;
       background: none;
       border: none;
       font-size: 28px;
+      color: var(--white);
       cursor: pointer;
     }
+    @media (max-width: 768px) {
+      .mobile-toggle {
+        display: block;
+      }
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: var(--primary);
+        flex-direction: column;
+        justify-content: center;
+        gap: 32px;
+        transition: 0.3s ease;
+        box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+        z-index: 1001;
+        padding: 2rem;
+      }
+      .nav-links.active {
+        right: 0;
+      }
+      .nav-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 28px;
+        color: white;
+      }
+    }
+    
     /* Hero */
     .hero {
-      padding: 60px 0 80px;
-      background: linear-gradient(135deg, #F8FAFE 0%, white 100%);
+      background: linear-gradient(90deg, rgba(43,138,201,0.85) 0%, rgba(43,138,201,0.7) 100%), url('https://ik.imagekit.io/puuz06/unnamed.jpg');
+      background-size: cover;
+      background-position: center 30%;
+      color: var(--white);
+    }
+    .hero .container {
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      padding: 80px 24px;
     }
     .hero-content {
+      max-width: 600px;
+    }
+    .hero h1 {
+      font-size: 56px;
+      color: var(--white);
+      margin-bottom: 16px;
+    }
+    .pre-headline {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--accent);
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .hero .lead {
+      font-size: 18px;
+      margin: 20px 0 28px;
+      opacity: 0.95;
+    }
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .trust-badge-row {
+      display: flex;
+      gap: 24px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .badge-mini {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 40px;
+      font-size: 13px;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 36px; }
+      .btn-group { flex-direction: column; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+    }
+    
+    /* stats */
+    .stats-section {
+      background: var(--bg-dark);
+      color: var(--white);
+    }
+    .stats-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .stat-item h3 {
+      font-size: 56px;
+      color: var(--accent);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .stat-item p {
+      font-size: 16px;
+      color: var(--white-muted);
+    }
+    @media (max-width: 768px) {
+      .stats-grid { flex-direction: column; align-items: center; }
+      .stat-item h3 { font-size: 42px; }
+    }
+    
+    /* Process steps */
+    .process-steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .step-card {
+      flex: 1;
+      text-align: center;
+      position: relative;
+      padding-top: 40px;
+    }
+    .step-number {
+      width: 64px;
+      height: 64px;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 28px;
+      font-weight: 800;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -56px auto 20px;
+      box-shadow: var(--shadow-md);
+    }
+    
+    /* Service icons */
+    .service-card i {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    
+    /* About */
+    .about-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 48px;
       align-items: center;
     }
-    .hero-image img {
+    .about-img img {
       width: 100%;
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow-md);
     }
-    /* Modal */
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(11,26,43,0.7);
-      align-items: center;
-      justify-content: center;
-      z-index: 2000;
+    @media (max-width: 768px) {
+      .about-grid { grid-template-columns: 1fr; }
     }
-    .modal-content {
-      background: white;
-      max-width: 520px;
-      width: 90%;
-      border-radius: 24px;
-      padding: 32px;
-      position: relative;
+    
+    /* Industries */
+    .industry-item {
+      text-align: center;
+      padding: 24px 16px;
+      background: var(--bg-light);
+      border-radius: var(--radius-lg);
+      transition: 0.2s;
     }
-    .close-modal {
-      position: absolute;
-      right: 20px;
-      top: 16px;
-      font-size: 28px;
-      cursor: pointer;
+    .industry-item i {
+      font-size: 48px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    
+    /* Contact form */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
     }
     .form-group {
       margin-bottom: 20px;
     }
-    input, select, textarea {
+    .form-group input, .form-group select, .form-group textarea {
       width: 100%;
       padding: 12px 16px;
-      border: 1px solid var(--border-light);
+      border: 1px solid var(--border);
       border-radius: var(--radius-md);
       font-family: var(--font-body);
+      font-size: 1rem;
     }
-    input:focus, select:focus, textarea:focus {
+    .form-group input:focus, .form-group select:focus {
       outline: none;
-      border-color: var(--accent-blue);
-      box-shadow: 0 0 0 3px rgba(0,91,187,0.2);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(43,138,201,0.2);
     }
-    /* Floating call */
-    .floating-call {
-      display: none;
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: var(--accent-gold);
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-md);
-      z-index: 999;
+    .footer-cta {
+      background: var(--primary);
+      text-align: center;
+      padding: 56px 20px;
+      color: white;
     }
-    .floating-call a {
-      color: #0B1A2B;
-      font-size: 28px;
-    }
-    /* Footer */
-    .site-footer {
-      background: var(--text-dark);
-      color: #BBCCEE;
+    .main-footer {
+      background: var(--bg-dark);
+      color: var(--white-muted);
       padding: 56px 0 32px;
     }
     .footer-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 40px;
+      gap: 32px;
     }
-    .footer-newsletter input {
-      background: #1e2a3e;
-      border: none;
+    .footer-grid h4 {
       color: white;
-      border-radius: var(--radius-md);
+      margin-bottom: 20px;
     }
-    .footer-newsletter button {
-      margin-top: 12px;
-      background: var(--accent-blue);
-      border: none;
-      padding: 10px;
-      border-radius: var(--radius-md);
-      color: white;
-      font-weight: 600;
-      width: 100%;
+    .footer-grid a {
+      color: var(--white-muted);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 12px;
     }
-    hr {
-      border-color: #2c3e50;
-      margin: 40px 0 24px;
+    .footer-grid a:hover { color: var(--accent); }
+    .copyright {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
     }
-    /* Responsive */
     @media (max-width: 768px) {
-      h1 { font-size: 44px; }
-      h2 { font-size: 28px; }
-      .hero-content { grid-template-columns: 1fr; text-align: center; }
-      .hero-image { order: -1; }
-      .nav { display: none; flex-direction: column; background: white; position: absolute; top: 72px; left: 0; width: 100%; padding: 24px; box-shadow: var(--shadow-md); gap: 20px; }
-      .nav.active { display: flex; }
-      .mobile-toggle { display: block; }
-      .header-cta { display: none; }
-      .top-bar .container { flex-direction: column; align-items: center; text-align: center; }
-      .floating-call { display: flex; }
-      .footer-grid { grid-template-columns: 1fr; text-align: center; }
-      .btn-primary, .btn-secondary { padding: 12px 24px; }
-      .logo img { height: 40px; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .process-steps { flex-direction: column; }
     }
-    @media (max-width: 1024px) and (min-width: 769px) {
-      .grid-3, .grid-4 { grid-template-columns: repeat(2,1fr); }
-    }
-    /* hidden sections placeholder (to satisfy 11-section requirement) */
-    .hidden-section {
+    
+    .mobile-cta {
       display: none;
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      background: var(--accent-red);
+      color: white;
+      padding: 14px;
+      border-radius: 50px;
+      text-align: center;
+      z-index: 1200;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: var(--shadow-lg);
+    }
+    @media (max-width: 768px) {
+      .mobile-cta { display: block; }
     }
   </style>
 </head>
 <body>
 
-<!-- Floating mobile CTA -->
-<div class="floating-call">
-  <a href="tel:+264811490128" aria-label="Call Nara Logistics"><i class="fas fa-phone-alt"></i></a>
-</div>
-
-<!-- Modal Quote Form -->
-<div id="quoteModal" class="modal">
-  <div class="modal-content">
-    <span class="close-modal">&times;</span>
-    <h3>Request a Free Quote</h3>
-    <p class="pre-headline" style="margin-bottom: 8px;">Fast response within 2 hours</p>
-    <form id="modalQuoteForm">
-      <div class="form-group"><input type="text" name="name" placeholder="Full Name *" required></div>
-      <div class="form-group"><input type="text" name="company" placeholder="Company (optional)"></div>
-      <div class="form-group">
-        <select name="service" required>
-          <option value="">Select Service *</option>
-          <option>Clearing & Forwarding</option><option>Import/Export</option><option>Cross-border Transport</option>
-          <option>Air Freight</option><option>Express Services</option><option>Bond Facilities</option>
-        </select>
-      </div>
-      <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number *" required></div>
-      <div class="form-group"><input type="email" name="email" placeholder="Email Address *" required></div>
-      <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send Request →</button>
-      <p style="font-size:12px; margin-top:12px;">Or call us directly: <a href="tel:+264811490128">+264 81 149 0128</a></p>
-    </form>
-  </div>
-</div>
-
-<!-- TOP BAR (contact info) -->
+<!-- TOP UTILITY BAR -->
 <div class="top-bar">
   <div class="container">
-    <span><i class="fas fa-phone-alt"></i> <a href="tel:+264811490128">+264 81 149 0128</a></span>
-    <span><i class="far fa-clock"></i> Mon–Fri 08:00 – 17:00</span>
-    <span><i class="fas fa-map-marker-alt"></i> 215 Nangolo Mbumba Dr, Walvis Bay</span>
-    <span><i class="fas fa-envelope"></i> <a href="mailto:sales@nara-logistics.com.na">sales@nara-logistics.com.na</a></span>
+    <span><i class="fas fa-phone-alt"></i> +264 81 274 8493</span>
+    <span><i class="far fa-clock"></i> Mon-Fri: 9:00am – 5:00pm</span>
+    <span><i class="fas fa-map-marker-alt"></i> 215 Nangolo Mbumba Dr, Walvis Bay, Namibia</span>
   </div>
 </div>
 
-<!-- STICKY HEADER (NavBar) with image logo -->
-<header class="site-header">
-  <div class="container header-content">
-    <div class="logo">
-      <img src="https://ik.imagekit.io/puuz06/65433a74-3242-41a9-aa35-0caec8b35879.jpg" alt="Nara Logistics cc logo" width="auto" height="48">
+<!-- STICKY HEADER -->
+<header class="main-header">
+  <div class="nav-container">
+    <div class="logo-area">
+      <img src="https://ik.imagekit.io/puuz06/unnamed.png" alt="Nara Logistics Logo" class="logo-img" loading="eager">
+      <a href="index.html" class="logo-text">Nara Logistics cc</a>
     </div>
-    <nav class="nav" id="mainNav">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact-section">Contact</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#trust">Why Us</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" id="nav-cta">Get Free Quote</a>
+      <button class="nav-close mobile-toggle" id="closeMenu" aria-label="Close menu">&times;</button>
     </nav>
-    <button class="btn-primary header-cta" id="openModalBtn" style="padding: 10px 24px;">Get a Quote</button>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
+    <button class="mobile-toggle" id="menuToggle" aria-label="Open menu"><i class="fas fa-bars"></i></button>
   </div>
 </header>
 
 <main>
-  <!-- HERO SECTION (Capture) -->
+  <!-- 1. HERO SECTION - updated background image as requested -->
   <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <span class="pre-headline"><i class="fas fa-globe-africa"></i> Walvis Bay • Namibia</span>
-        <h1>Nara Logistics cc<br><span style="color: var(--accent-blue);">Globally Connected, Locally Invested</span></h1>
-        <p class="lead">Locally invested. Globally connected. Your trusted partner for cross-border freight, customs clearance, and door‑to‑door logistics.</p>
-        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-          <button id="heroModalBtn" class="btn-primary"><i class="fas fa-file-signature"></i> Contact Us</button>
-          <a href="https://maps.google.com/?q=215+Nangolo+Mbumba+Drive+Walvis+Bay" target="_blank" class="btn-secondary"><i class="fas fa-directions"></i> Get Directions</a>
-        </div>
-        <div class="trust-strip">
-          <span><i class="fas fa-check-circle" style="color: var(--accent-blue);"></i> Operating since 2013</span>
-          <span><i class="fas fa-truck-moving"></i> 150+ cross-border loads/year</span>
-          <span><i class="fas fa-headset"></i> 24h customer support</span>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="https://ik.imagekit.io/puuz06/476904847_1056756556465847_7492718468988657097_n(1).jpg?updatedAt=1778145838124" alt="Nara Logistics freight team at work" width="600" height="450" loading="eager">
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST BADGES / Why Choose Us (Pillar 8) -->
-  <section class="section bg-light">
     <div class="container">
-      <div class="text-center" style="text-align: center;"><span class="pre-headline">Why choose us</span><h2>Your Walvis Bay logistics advantage</h2></div>
-      <div class="grid-4" style="margin-top: 32px;">
-        <div class="card" style="text-align: center;"><i class="fas fa-map-marked-alt" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Local Expertise</h3><p>Deep knowledge of Namibian customs & Walvis Bay port procedures.</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-truck-ramp-box" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Cross‑Border Power</h3><p>Abnormal loads & SADC corridor specialists.</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-boxes" style="font-size: 40px; color: var(--accent-gold);"></i><h3>End‑to‑end Services</h3><p>Clearing, air freight, express, bond facilities.</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-clock" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Responsive Support</h3><p>Mon–Fri 8am‑5pm, quote in hours.</p></div>
+      <div class="hero-content">
+        <span class="pre-headline">Globally Connected, Locally Invested</span>
+        <h1>Nara Logistics cc</h1>
+        <p class="lead">Your trusted partner for clearing, forwarding, and cross-border logistics in Walvis Bay and across the SADC region. Fast, compliant, reliable.</p>
+        <div class="btn-group">
+          <a href="contact.html" class="btn-primary"><i class="fas fa-truck-fast"></i> Get Free Quote</a>
+          <a href="services.html" class="btn-secondary">View Our Services →</a>
+        </div>
+        <div class="trust-badge-row">
+          <div class="badge-mini"><i class="fas fa-calendar-alt"></i> Since 2013</div>
+          <div class="badge-mini"><i class="fas fa-map-pin"></i> Walvis Bay Based</div>
+          <div class="badge-mini"><i class="fas fa-road"></i> SADC Specialist</div>
+          <div class="badge-mini"><i class="fas fa-headset"></i> 24/7 Support</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FEATURE HIGHLIGHTS / Past Work (Core Services teaser) -->
+  <!-- 2. TRUST BADGES / WHY CHOOSE US -->
+  <section id="trust" class="section">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 16px;">Why Choose Nara Logistics?</h2>
+      <p style="text-align: center; margin-bottom: 56px; font-size: 18px;">Dependability, Customer Service, and Uniqueness in Every Shipment</p>
+      <div class="grid-3">
+        <div class="card"><i class="fas fa-map-marked-alt" style="font-size: 48px; color: var(--primary); margin-bottom: 16px;"></i><h3>Local Knowledge, Regional Reach</h3><p>Based in Walvis Bay with deep understanding of Namibian customs and SADC cross-border regulations.</p></div>
+        <div class="card"><i class="fas fa-stopwatch" style="font-size: 48px; color: var(--accent); margin-bottom: 16px;"></i><h3>Rapid Processing</h3><p>Express clearing and forwarding services with same-day processing for urgent shipments.</p></div>
+        <div class="card"><i class="fas fa-weight-hanging" style="font-size: 48px; color: var(--primary); margin-bottom: 16px;"></i><h3>Abnormal Freight Experts</h3><p>Specialized handling for oversized, heavy, and abnormal loads with certified transporters.</p></div>
+        <div class="card"><i class="fas fa-globe-africa" style="font-size: 48px; color: var(--accent); margin-bottom: 16px;"></i><h3>SADC Corridor Expertise</h3><p>Seamless cross-border transportation across Namibia, Botswana, South Africa, and beyond.</p></div>
+        <div class="card"><i class="fas fa-shield-alt" style="font-size: 48px; color: var(--primary); margin-bottom: 16px;"></i><h3>100% Compliant</h3><p>Full regulatory compliance for import/export, intransit clearance, and bond facilities.</p></div>
+        <div class="card"><i class="fas fa-award" style="font-size: 48px; color: var(--accent); margin-bottom: 16px;"></i><h3>10+ Years of Reliability</h3><p>Trusted by businesses across Namibia for consistent, dependable logistics solutions.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. FEATURE HIGHLIGHTS / STATS (Proven Performance) -->
+  <section class="stats-section section">
+    <div class="container">
+      <h2 style="text-align: center; color: white; margin-bottom: 48px;">Proven Performance</h2>
+      <div class="stats-grid">
+        <div class="stat-item"><h3>10+</h3><p>Years in Business</p></div>
+        <div class="stat-item"><h3>5,000+</h3><p>Shipments Cleared</p></div>
+        <div class="stat-item"><h3>15+</h3><p>SADC Routes Covered</p></div>
+        <div class="stat-item"><h3>24/7</h3><p>Support Availability</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. HOW IT WORKS (Process) -->
   <section class="section">
     <div class="container">
-      <div style="text-align: center;"><span class="pre-headline">High‑margin expertise</span><h2>Our Core Services</h2></div>
-      <div class="grid-3" style="margin-top: 32px;">
-        <div class="service-card"><i class="fas fa-file-invoice-dollar"></i><h3>Clearing & Forwarding</h3><p>We offer clearing and forwarding services for trucks/vehicles, breakbulk, containers and abnormal freight.</p><a href="#" style="color:var(--accent-blue); font-weight:600;">Learn more →</a></div>
-        <div class="service-card"><i class="fas fa-truck"></i><h3>Transportation</h3><p>We offer a wide range of transportation, abnormal loading facilities with our transporters ready for any load cross-border.</p><a href="#" style="color:var(--accent-blue); font-weight:600;">Learn more →</a></div>
-        <div class="service-card"><i class="fas fa-chart-line"></i><h3>Import/Export</h3><p>We do clearance for intransit import/export services, ensuring fast customs release.</p><a href="#" style="color:var(--accent-blue); font-weight:600;">Learn more →</a></div>
+      <h2 style="text-align: center; margin-bottom: 16px;">Our Process: Simple, Fast, Reliable</h2>
+      <p style="text-align: center; margin-bottom: 56px;">From quote to delivery, we handle every step of your logistics journey</p>
+      <div class="process-steps">
+        <div class="step-card"><div class="step-number">1</div><h3>Request Quote</h3><p>Contact us via phone, email, or form. Response within 2 hours.</p></div>
+        <div class="step-card"><div class="step-number">2</div><h3>Documentation Review</h3><p>We review shipment docs and advise on clearance strategy.</p></div>
+        <div class="step-card"><div class="step-number">3</div><h3>Customs Clearance</h3><p>We handle all customs paperwork, duties, and approvals.</p></div>
+        <div class="step-card"><div class="step-number">4</div><h3>Secure Transportation</h3><p>Cross-border/local delivery via trusted carriers.</p></div>
+        <div class="step-card"><div class="step-number">5</div><h3>Delivery Confirmation</h3><p>Final delivery with proof of delivery documentation.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS (3-step) -->
-  <section class="section bg-light">
+  <!-- 5. OFFERINGS / SERVICES (6 Core) -->
+  <section id="services" class="section" style="background: var(--bg-light);">
     <div class="container">
-      <div style="text-align: center;"><span class="pre-headline">Simple process</span><h2>How It Works</h2></div>
-      <div class="grid-3" style="margin-top: 32px;">
-        <div class="step-card" style="background: white; text-align: center;"><div style="background: var(--accent-blue); color:white; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-weight:800; font-size:26px;">1</div><h3>Request a Quote</h3><p>Fill the 4-field form or call +264 81 149 0128.</p></div>
-        <div class="step-card" style="background: white; text-align: center;"><div style="background: var(--accent-blue); color:white; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-weight:800; font-size:26px;">2</div><h3>We Plan & Clear</h3><p>Customs clearance, documentation, and scheduling.</p></div>
-        <div class="step-card" style="background: white; text-align: center;"><div style="background: var(--accent-blue); color:white; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 24px; font-weight:800; font-size:26px;">3</div><h3>Delivered On Time</h3><p>Door-to-door delivery and tracking; abnormal loads handled with care.</p></div>
-      </div>
-      <div style="text-align: center; margin-top: 40px;"><button id="openModalBtn2" class="btn-primary">Get Your Free Quote →</button></div>
-    </div>
-  </section>
-
-  <!-- OFFERINGS / SERVICES (exact 6 cards, verbatim copy) -->
-  <section id="services" class="section">
-    <div class="container">
-      <div style="text-align: center;"><span class="pre-headline">Full-service logistics</span><h2>Key Services Offered</h2></div>
-      <div class="grid-3" style="margin-top: 32px;">
-        <div class="service-card"><i class="fas fa-charging-station"></i><h3>Clearing and Forwarding</h3><p>“We offer clearing and forwarding services for trucks/vehicles, breakbulk, containers and abnormal freight.”</p></div>
-        <div class="service-card"><i class="fas fa-shipping-fast"></i><h3>Express Services</h3><p>“Our express services deliver on time door-to-door, locally country wide.”</p></div>
-        <div class="service-card"><i class="fas fa-handshake"></i><h3>Import/Export</h3><p>“We do clearance for intransit import/export services.”</p></div>
-        <div class="service-card"><i class="fas fa-plane"></i><h3>Air Freight Services</h3><p>“We offer Air Freight clearance.”</p></div>
-        <div class="service-card"><i class="fas fa-truck-moving"></i><h3>Transportation</h3><p>“We offer a wide range of transportation, abnormal loading facilities with our transporters ready for any load cross-border.”</p></div>
-        <div class="service-card"><i class="fas fa-warehouse"></i><h3>Bond Facilities</h3><p>Secure bond facilities for customs deferment and efficient cargo storage. (placeholder – confirm with client)</p></div>
+      <h2 style="text-align: center; margin-bottom: 56px;">Our Core Services</h2>
+      <div class="grid-3">
+        <div class="service-card"><i class="fas fa-clipboard-list"></i><h3>Clearing and Forwarding</h3><p>We offer clearing and forwarding for trucks, breakbulk, containers & abnormal freight.</p><a href="contact.html" style="color: var(--primary); font-weight: 600; display: inline-block; margin-top: 12px;">Learn More →</a></div>
+        <div class="service-card"><i class="fas fa-exchange-alt"></i><h3>Import/Export</h3><p>Intransit import/export clearance services with full customs documentation.</p><a href="contact.html" style="color: var(--primary); font-weight: 600; margin-top: 12px;">Learn More →</a></div>
+        <div class="service-card"><i class="fas fa-bolt"></i><h3>Express Services</h3><p>Door-to-door express delivery locally countrywide, time-critical shipments.</p><a href="contact.html" style="color: var(--primary); font-weight: 600;">Learn More →</a></div>
+        <div class="service-card"><i class="fas fa-plane"></i><h3>Air Freight Services</h3><p>Air freight clearance for international and domestic shipments.</p><a href="contact.html" style="color: var(--primary); font-weight: 600;">Learn More →</a></div>
+        <div class="service-card"><i class="fas fa-truck"></i><h3>Transportation</h3><p>Cross-border transportation and abnormal loading facilities for any load.</p><a href="contact.html" style="color: var(--primary); font-weight: 600;">Learn More →</a></div>
+        <div class="service-card"><i class="fas fa-warehouse"></i><h3>Bond Facilities</h3><p>Secure bonded warehousing for goods awaiting clearance or re-export.</p><a href="contact.html" style="color: var(--primary); font-weight: 600;">Learn More →</a></div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT US (exact intro paragraph) -->
-  <section id="about" class="section bg-light">
+  <!-- 6. ABOUT US -->
+  <section id="about" class="section">
     <div class="container">
-      <div class="grid-2" style="align-items: center;">
+      <div class="about-grid">
         <div>
-          <span class="pre-headline">Our story</span>
-          <h2>About Nara Logistics cc</h2>
-          <p style="font-size:18px; margin-bottom: 20px;">“Welcome to Nara Logistics cc, your number one source service delivery. We’re dedicated to giving you the very best of our services, with a focus on dependability, customer service and uniqueness.”</p>
-          <p>Based in Walvis Bay, we combine global connectivity with local investment to deliver outstanding logistics – from abnormal loads to air freight. Since 2013, businesses across Namibia and SADC trust our expertise.</p>
-          <a href="#" class="btn-secondary" style="margin-top: 24px; display: inline-block;">Meet the Team →</a>
+          <h2>About Nara Logistics</h2>
+          <p style="margin: 20px 0;">Founded in 2013, Nara Logistics cc has been Walvis Bay's trusted partner for clearing, forwarding, and cross-border logistics solutions. We combine global connectivity with deep local expertise to serve businesses across Namibia and the SADC region.</p>
+          <p>Our commitment to dependability, customer service, and uniqueness sets us apart. Whether importing industrial equipment or exporting goods, our team delivers with speed, compliance, and care.</p>
+          <div style="display: flex; gap: 32px; margin-top: 32px; flex-wrap: wrap;"><div><strong style="font-size: 28px; color: var(--primary);">10+</strong><br>Years</div><div><strong style="font-size: 28px; color: var(--primary);">5K+</strong><br>Shipments</div><div><strong style="font-size: 28px; color: var(--primary);">15+</strong><br>SADC Routes</div></div>
         </div>
-        <div><img src="https://ik.imagekit.io/puuz06/150906953_114283327324695_8231646737866558056_n.jpg?updatedAt=1778145836148" alt="Nara Logistics team members" loading="lazy" style="width:100%; border-radius: var(--radius-lg);"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INDUSTRIES WE SERVE (inferred from brief) -->
-  <section class="section">
-    <div class="container">
-      <div style="text-align: center;"><span class="pre-headline">Industry expertise</span><h2>Industries We Serve</h2></div>
-      <div class="grid-4" style="margin-top: 32px;">
-        <div class="card" style="text-align: center;"><i class="fas fa-hard-hat" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Mining & Heavy Equipment</h3><p>Abnormal freight & breakbulk specialists</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-industry" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Manufacturing & Exporters</h3><p>Seamless import/export clearance</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-shopping-cart" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Retail & E‑commerce</h3><p>Express door‑to‑door deliveries</p></div>
-        <div class="card" style="text-align: center;"><i class="fas fa-seedling" style="font-size: 40px; color: var(--accent-gold);"></i><h3>Agriculture & Commodities</h3><p>Cross-border transport expertise</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / FREE QUOTE SECTION (Conversion) -->
-  <section id="contact-section" class="section bg-light">
-    <div class="container">
-      <div class="grid-2" style="gap: 48px;">
-        <div>
-          <span class="pre-headline">Get your free quote</span>
-          <h2>Ready to move your freight?</h2>
-          <p>Fill in the form or call us directly. Our logistics experts respond within 2 business hours.</p>
-          <ul style="margin-top: 24px; list-style: none;">
-            <li><i class="fas fa-phone-alt" style="color:var(--accent-blue); width:28px;"></i> <strong>+264 81 149 0128</strong></li>
-            <li><i class="fas fa-envelope"></i> sales@nara-logistics.com.na</li>
-            <li><i class="fas fa-clock"></i> Mon – Fri 08:00 – 17:00 (WAT)</li>
-          </ul>
+        <div class="about-img">
+          <img src="https://ik.imagekit.io/puuz06/476904847_1056756556465847_7492718468988657097_n(1).jpg?updatedAt=1778145838124" alt="Nara Logistics team at Walvis Bay port operations" loading="lazy">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. INDUSTRIES WE SERVE -->
+  <section class="section" style="background: var(--bg-light);">
+    <div class="container">
+      <h2 style="text-align: center; margin-bottom: 16px;">Industries We Serve</h2>
+      <p style="text-align: center; margin-bottom: 56px;">Specialized logistics solutions for Namibia's key sectors</p>
+      <div class="grid-4">
+        <div class="industry-item"><i class="fas fa-hard-hat"></i><h3>Mining</h3><p>Heavy equipment</p></div>
+        <div class="industry-item"><i class="fas fa-building"></i><h3>Construction</h3><p>Machinery & loads</p></div>
+        <div class="industry-item"><i class="fas fa-fish"></i><h3>Fishing</h3><p>Seafood exports</p></div>
+        <div class="industry-item"><i class="fas fa-tractor"></i><h3>Agriculture</h3><p>Farming equipment</p></div>
+        <div class="industry-item"><i class="fas fa-oil-can"></i><h3>Oil & Gas</h3><p>Hazardous goods</p></div>
+        <div class="industry-item"><i class="fas fa-industry"></i><h3>Manufacturing</h3><p>Raw materials</p></div>
+        <div class="industry-item"><i class="fas fa-shopping-cart"></i><h3>Retail</h3><p>Consumer goods</p></div>
+        <div class="industry-item"><i class="fas fa-car"></i><h3>Automotive</h3><p>Vehicles & parts</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT & FREE QUOTE FORM (Convert) -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
         <div>
-          <form id="contactForm">
-            <div class="form-group"><input type="text" name="fullname" placeholder="Full Name *" required></div>
-            <div class="form-group"><input type="text" name="company" placeholder="Company"></div>
-            <div class="form-group"><select name="serviceNeed" required><option value="">Service Needed *</option><option>Clearing & Forwarding</option><option>Transportation</option><option>Import/Export</option><option>Air Freight</option><option>Express</option><option>Bond Facilities</option></select></div>
-            <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number *" required></div>
-            <div class="form-group"><input type="email" name="email" placeholder="Email Address *" required></div>
-            <button type="submit" class="btn-primary" style="width:100%;">Request Free Quote →</button>
+          <h2>Get a Free Quote</h2>
+          <p>Tell us about your logistics needs, and we'll respond within 2 hours.</p>
+          <form id="quoteForm">
+            <div class="form-group"><input type="text" name="name" placeholder="Full Name *" required></div>
+            <div class="form-group"><input type="text" name="company" placeholder="Company Name"></div>
+            <div class="form-group">
+              <select name="service" required>
+                <option value="">Service Needed *</option>
+                <option>Clearing and Forwarding</option>
+                <option>Import/Export</option>
+                <option>Express Services</option>
+                <option>Air Freight Services</option>
+                <option>Transportation</option>
+                <option>Bond Facilities</option>
+              </select>
+            </div>
+            <div class="form-group"><input type="text" name="contact" placeholder="Phone or Email *" required></div>
+            <button type="submit" class="btn-primary">Send Request →</button>
+            <p style="margin-top: 12px; font-size: 14px;">* We'll reply within 24 hours.</p>
           </form>
+        </div>
+        <div>
+          <h3>Contact Details</h3>
+          <p><i class="fas fa-phone-alt" style="color: var(--primary);"></i> <a href="tel:+264812748493" style="text-decoration:none;">+264 81 274 8493</a></p>
+          <p><i class="fas fa-envelope" style="color: var(--primary);"></i> <a href="mailto:renzell@nara-logistics.com.na">renzell@nara-logistics.com.na</a></p>
+          <p><i class="fas fa-map-marker-alt" style="color: var(--primary);"></i> 215 Nangolo Mbumba Dr, Walvis Bay, Namibia</p>
+          <iframe src="https://maps.google.com/maps?q=215%20Nangolo%20Mbumba%20drive%2C%20Walvis%20Bay%2C%20Namibia&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="220" style="border:0; border-radius:12px; margin-top: 20px;" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </section>
 </main>
 
+<!-- CTA BANNER ABOVE FOOTER -->
+<div class="footer-cta">
+  <div class="container">
+    <h3 style="color: white;">Ready to streamline your logistics?</h3>
+    <p style="margin: 16px 0;">Get your free quote today and experience the Nara Logistics difference</p>
+    <a href="contact.html" class="btn-primary" style="background: white; color: var(--primary);">Get Free Quote →</a>
+  </div>
+</div>
+
 <!-- FOOTER -->
-<footer class="site-footer">
+<footer class="main-footer">
   <div class="container">
     <div class="footer-grid">
-      <div><h3 style="color: white;">Nara Logistics cc</h3><p style="margin: 16px 0;">Globally Connected, Locally Invested</p><p><i class="fas fa-map-marker-alt"></i> 215 Nangolo Mbumba Dr, Walvis Bay, Namibia</p></div>
-      <div><h4>Quick Links</h4><ul style="list-style: none; margin-top: 12px;"><li><a href="#home" style="color:#BBCCEE;">Home</a></li><li><a href="#about" style="color:#BBCCEE;">About</a></li><li><a href="#services" style="color:#BBCCEE;">Services</a></li><li><a href="#contact-section" style="color:#BBCCEE;">Contact</a></li></ul></div>
-      <div><h4>Contact</h4><p>📞 +264 81 149 0128</p><p>✉️ sales@nara-logistics.com.na</p><p>📅 Mon–Fri 08:00–17:00</p></div>
-      <div class="footer-newsletter"><h4>Newsletter</h4><input type="email" placeholder="your@email.com" id="newsEmail"><button id="newsBtn">Subscribe →</button><p style="font-size:12px; margin-top: 12px;">Get logistics insights & offers</p></div>
+      <div>
+        <img src="https://ik.imagekit.io/puuz06/unnamed.png" alt="Nara Logistics" style="height: 48px; margin-bottom: 16px;">
+        <p>Globally Connected, Locally Invested. Trusted logistics partner since 2013.</p>
+      </div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div><h4>Our Services</h4><a href="services.html">Clearing & Forwarding</a><a href="services.html">Import/Export</a><a href="services.html">Express Services</a><a href="services.html">Air Freight</a><a href="services.html">Transportation</a><a href="services.html">Bond Facilities</a></div>
+      <div><h4>Contact Info</h4><p><i class="fas fa-map-pin"></i> 215 Nangolo Mbumba Dr, Walvis Bay</p><p><i class="fas fa-phone"></i> +264 81 274 8493</p><p><i class="fas fa-envelope"></i> renzell@nara-logistics.com.na</p></div>
     </div>
-    <hr><div style="text-align: center;">© Nara Logistics cc <span id="year"></span>. All rights reserved. | <a href="#" style="color:var(--accent-blue);">Privacy Policy</a></div>
+    <div class="copyright"><p>© 2026 Nara Logistics cc. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p></div>
   </div>
 </footer>
 
-<!-- Hidden sections: Testimonials & Blog (no data, hidden as per blueprint) -->
-<div class="hidden-section" aria-hidden="true">
-  <!-- Testimonials section placeholder: hidden until client provides quotes -->
-  <section id="testimonials-placeholder"></section>
-  <!-- Blog/Insights placeholder: hidden -->
-  <section id="blog-placeholder"></section>
-</div>
+<!-- MOBILE STICKY CALL BUTTON -->
+<a class="mobile-cta" href="tel:+264812748493" aria-label="Call Nara Logistics"><i class="fas fa-phone-alt"></i> Call +264 81 274 8493</a>
 
 <script>
   // Mobile menu toggle
-  const toggleBtn = document.getElementById('mobileToggle');
-  const nav = document.getElementById('mainNav');
-  if(toggleBtn && nav) {
-    toggleBtn.addEventListener('click', () => { nav.classList.toggle('active'); });
-    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => nav.classList.remove('active')));
+  const toggleBtn = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navLinks');
+  const closeBtn = document.getElementById('closeMenu');
+  function openMenu() { navMenu.classList.add('active'); }
+  function closeMenuFunc() { navMenu.classList.remove('active'); }
+  if(toggleBtn) toggleBtn.addEventListener('click', openMenu);
+  if(closeBtn) closeBtn.addEventListener('click', closeMenuFunc);
+  document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', closeMenuFunc));
+
+  // Form submission alert & demo
+  const form = document.getElementById('quoteForm');
+  if(form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! We will respond within 24 hours.');
+      form.reset();
+    });
   }
-  // Modal logic
-  const modal = document.getElementById('quoteModal');
-  const openBtns = document.querySelectorAll('#openModalBtn, #heroModalBtn, #openModalBtn2');
-  const closeSpan = document.querySelector('.close-modal');
-  function openModal() { modal.style.display = 'flex'; }
-  function closeModal() { modal.style.display = 'none'; }
-  openBtns.forEach(btn => btn.addEventListener('click', openModal));
-  if(closeSpan) closeSpan.addEventListener('click', closeModal);
-  window.addEventListener('click', (e) => { if(e.target === modal) closeModal(); });
 
-  // Form handler (modal + contact section)
-  const modalForm = document.getElementById('modalQuoteForm');
-  const contactForm = document.getElementById('contactForm');
-  function handleSubmit(e) {
-    e.preventDefault();
-    alert('Thank you! We\'ll respond within 24 hours. A logistics expert will reach you shortly.');
-    e.target.reset();
-    closeModal();
-  }
-  if(modalForm) modalForm.addEventListener('submit', handleSubmit);
-  if(contactForm) contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('Thank you! We\'ll respond within 24 hours.');
-    contactForm.reset();
-  });
-
-  // Newsletter placeholder
-  document.getElementById('newsBtn')?.addEventListener('click', () => {
-    const email = document.getElementById('newsEmail').value;
-    if(email) alert(`Thanks ${email}, you'll receive our updates.`);
-    else alert('Please enter an email address');
-  });
-
-  // Smooth anchor scroll
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if(targetId === "#") return;
-      const target = document.querySelector(targetId);
+      const target = document.querySelector(this.getAttribute('href'));
       if(target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        if(nav.classList.contains('active')) nav.classList.remove('active');
       }
     });
   });
-
-  // Dynamic year
-  document.getElementById('year').innerText = new Date().getFullYear();
-
-  // Sticky header compact effect
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.site-header .header-content');
-    if(window.scrollY > 60) header.style.height = '56px';
-    else header.style.height = '72px';
-  });
 </script>
 
-<!-- JSON-LD Schema (LocalBusiness) -->
+<!-- JSON-LD Schema: LocalBusiness -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Nara Logistics cc",
-  "image": "https://nara-logistics.com.na/logo.png",
-  "telephone": "+264811490128",
-  "email": "sales@nara-logistics.com.na",
+  "description": "Clearing and forwarding, cross-border logistics, air freight, transport, and bond facilities in Walvis Bay, Namibia.",
+  "url": "https://nara-logistics.com.na",
+  "telephone": "+264812748493",
+  "email": "renzell@nara-logistics.com.na",
+  "foundingDate": "2013",
+  "slogan": "Globally Connected, Locally Invested",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "215 Nangolo Mbumba drive",
     "addressLocality": "Walvis Bay",
     "addressRegion": "Erongo",
-    "postalCode": "9000",
     "addressCountry": "NA"
   },
-  "openingHours": "Mo-Fr 08:00-17:00",
-  "url": "https://nara-logistics.com.na",
-  "priceRange": "$$",
-  "description": "Clearing and forwarding, express services, import/export, transportation, air freight and bond facilities based in Walvis Bay, Namibia."
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "priceRange": "$$"
 }
 </script>
 </body>
